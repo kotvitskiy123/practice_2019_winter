@@ -28,20 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnAddTown = new System.Windows.Forms.Button();
+            this.btnAddPlane = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
             this.tbTownsInfo = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // btnAddTown
+            // btnAddPlane
             // 
-            this.btnAddTown.Location = new System.Drawing.Point(659, 33);
-            this.btnAddTown.Name = "btnAddTown";
-            this.btnAddTown.Size = new System.Drawing.Size(75, 23);
-            this.btnAddTown.TabIndex = 0;
-            this.btnAddTown.Text = "Add town";
-            this.btnAddTown.UseVisualStyleBackColor = true;
-            this.btnAddTown.Click += new System.EventHandler(this.btnAddTown_Click);
+            this.btnAddPlane.Location = new System.Drawing.Point(659, 33);
+            this.btnAddPlane.Name = "btnAddPlane";
+            this.btnAddPlane.Size = new System.Drawing.Size(75, 23);
+            this.btnAddPlane.TabIndex = 0;
+            this.btnAddPlane.Text = "Add plane";
+            this.btnAddPlane.UseVisualStyleBackColor = true;
+            this.btnAddPlane.Click += new System.EventHandler(this.btnAddPlane_Click);
             // 
             // btnClose
             // 
@@ -69,7 +69,7 @@
             this.ClientSize = new System.Drawing.Size(777, 409);
             this.Controls.Add(this.tbTownsInfo);
             this.Controls.Add(this.btnClose);
-            this.Controls.Add(this.btnAddTown);
+            this.Controls.Add(this.btnAddPlane);
             this.MaximizeBox = false;
             this.Name = "fMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -81,7 +81,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btnAddTown;
+        private System.Windows.Forms.Button btnAddPlane;
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.TextBox tbTownsInfo;
     }

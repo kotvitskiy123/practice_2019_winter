@@ -7,17 +7,16 @@ using System.Threading.Tasks;
 namespace WindowsFormsApp1
 {
   
-        public class Town
+        public class Plane
         {
-            public string Name;
-            public string Country;
-            public string Region;
-            public int Population;
-            public double YearIncome;
-            public double Square; public bool HasPort;
-            public bool HasAirport;
-            public double GetYearIncomePerInhabitant()
-            { return YearIncome / Population; }
-        }
+        public string Name;
+        public string Color;
+        public string Engine;
+        public int Weight;
+        public int CountPassengers;
+        public int CountFuel;
+        public bool HasSpecialBagsSection;
+        public bool IsFull;
+    }
     
 }

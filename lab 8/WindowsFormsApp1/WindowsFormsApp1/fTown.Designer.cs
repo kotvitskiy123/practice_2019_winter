@@ -31,11 +31,11 @@
             this.btnOk = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.tbSquare = new System.Windows.Forms.TextBox();
-            this.tbYearIncome = new System.Windows.Forms.TextBox();
-            this.tbPopulation = new System.Windows.Forms.TextBox();
-            this.tbRegion = new System.Windows.Forms.TextBox();
-            this.tbCountry = new System.Windows.Forms.TextBox();
+            this.tbCountFuel = new System.Windows.Forms.TextBox();
+            this.tbCountPassengers = new System.Windows.Forms.TextBox();
+            this.tbWeight = new System.Windows.Forms.TextBox();
+            this.tbEngine = new System.Windows.Forms.TextBox();
+            this.tbColor = new System.Windows.Forms.TextBox();
             this.tbName = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -44,8 +44,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.chbHasPort = new System.Windows.Forms.CheckBox();
             this.chbHasAirport = new System.Windows.Forms.CheckBox();
+            this.chbHasPort = new System.Windows.Forms.CheckBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -73,11 +73,11 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.tbSquare);
-            this.groupBox1.Controls.Add(this.tbYearIncome);
-            this.groupBox1.Controls.Add(this.tbPopulation);
-            this.groupBox1.Controls.Add(this.tbRegion);
-            this.groupBox1.Controls.Add(this.tbCountry);
+            this.groupBox1.Controls.Add(this.tbCountFuel);
+            this.groupBox1.Controls.Add(this.tbCountPassengers);
+            this.groupBox1.Controls.Add(this.tbWeight);
+            this.groupBox1.Controls.Add(this.tbEngine);
+            this.groupBox1.Controls.Add(this.tbColor);
             this.groupBox1.Controls.Add(this.tbName);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label5);
@@ -90,42 +90,42 @@
             this.groupBox1.Size = new System.Drawing.Size(295, 292);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "general data";
+            this.groupBox1.Text = "General data";
             // 
-            // tbSquare
+            // tbCountFuel
             // 
-            this.tbSquare.Location = new System.Drawing.Point(171, 249);
-            this.tbSquare.Name = "tbSquare";
-            this.tbSquare.Size = new System.Drawing.Size(100, 20);
-            this.tbSquare.TabIndex = 6;
+            this.tbCountFuel.Location = new System.Drawing.Point(171, 249);
+            this.tbCountFuel.Name = "tbCountFuel";
+            this.tbCountFuel.Size = new System.Drawing.Size(100, 20);
+            this.tbCountFuel.TabIndex = 6;
             // 
-            // tbYearIncome
+            // tbCountPassengers
             // 
-            this.tbYearIncome.Location = new System.Drawing.Point(171, 208);
-            this.tbYearIncome.Name = "tbYearIncome";
-            this.tbYearIncome.Size = new System.Drawing.Size(100, 20);
-            this.tbYearIncome.TabIndex = 5;
+            this.tbCountPassengers.Location = new System.Drawing.Point(171, 208);
+            this.tbCountPassengers.Name = "tbCountPassengers";
+            this.tbCountPassengers.Size = new System.Drawing.Size(100, 20);
+            this.tbCountPassengers.TabIndex = 5;
             // 
-            // tbPopulation
+            // tbWeight
             // 
-            this.tbPopulation.Location = new System.Drawing.Point(171, 165);
-            this.tbPopulation.Name = "tbPopulation";
-            this.tbPopulation.Size = new System.Drawing.Size(100, 20);
-            this.tbPopulation.TabIndex = 4;
+            this.tbWeight.Location = new System.Drawing.Point(171, 165);
+            this.tbWeight.Name = "tbWeight";
+            this.tbWeight.Size = new System.Drawing.Size(100, 20);
+            this.tbWeight.TabIndex = 4;
             // 
-            // tbRegion
+            // tbEngine
             // 
-            this.tbRegion.Location = new System.Drawing.Point(171, 111);
-            this.tbRegion.Name = "tbRegion";
-            this.tbRegion.Size = new System.Drawing.Size(100, 20);
-            this.tbRegion.TabIndex = 3;
+            this.tbEngine.Location = new System.Drawing.Point(171, 111);
+            this.tbEngine.Name = "tbEngine";
+            this.tbEngine.Size = new System.Drawing.Size(100, 20);
+            this.tbEngine.TabIndex = 3;
             // 
-            // tbCountry
+            // tbColor
             // 
-            this.tbCountry.Location = new System.Drawing.Point(171, 71);
-            this.tbCountry.Name = "tbCountry";
-            this.tbCountry.Size = new System.Drawing.Size(100, 20);
-            this.tbCountry.TabIndex = 2;
+            this.tbColor.Location = new System.Drawing.Point(171, 71);
+            this.tbColor.Name = "tbColor";
+            this.tbColor.Size = new System.Drawing.Size(100, 20);
+            this.tbColor.TabIndex = 2;
             // 
             // tbName
             // 
@@ -139,60 +139,54 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(21, 249);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(76, 13);
+            this.label6.Size = new System.Drawing.Size(61, 13);
             this.label6.TabIndex = 0;
-            this.label6.Text = " Square кв.км";
-           
+            this.label6.Text = "Count Fuel ";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(21, 208);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(89, 13);
+            this.label5.Size = new System.Drawing.Size(93, 13);
             this.label5.TabIndex = 0;
-            this.label5.Text = "Year income. грн";
-         
+            this.label5.Text = "Count Passengers";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(21, 165);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(93, 13);
+            this.label4.Size = new System.Drawing.Size(41, 13);
             this.label4.TabIndex = 0;
-            this.label4.Text = "Count of habitants";
-         
+            this.label4.Text = "Weight";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(21, 111);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(41, 13);
+            this.label3.Size = new System.Drawing.Size(40, 13);
             this.label3.TabIndex = 0;
-            this.label3.Text = "Region";
-        
+            this.label3.Text = "Engine";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(21, 71);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(43, 13);
+            this.label2.Size = new System.Drawing.Size(31, 13);
             this.label2.TabIndex = 0;
-            this.label2.Text = "Country";
-     
+            this.label2.Text = "Color";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(21, 20);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(53, 13);
+            this.label1.Size = new System.Drawing.Size(65, 13);
             this.label1.TabIndex = 0;
-            this.label1.Text = "City name";
-       
+            this.label1.Text = "Plane Name";
             // 
             // groupBox2
             // 
@@ -203,27 +197,27 @@
             this.groupBox2.Size = new System.Drawing.Size(295, 162);
             this.groupBox2.TabIndex = 3;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Transport";
-            // 
-            // chbHasPort
-            // 
-            this.chbHasPort.AutoSize = true;
-            this.chbHasPort.Location = new System.Drawing.Point(24, 43);
-            this.chbHasPort.Name = "chbHasPort";
-            this.chbHasPort.Size = new System.Drawing.Size(94, 17);
-            this.chbHasPort.TabIndex = 0;
-            this.chbHasPort.Text = "Town has port";
-            this.chbHasPort.UseVisualStyleBackColor = true;
+            this.groupBox2.Text = "Special data";
             // 
             // chbHasAirport
             // 
             this.chbHasAirport.AutoSize = true;
             this.chbHasAirport.Location = new System.Drawing.Point(24, 107);
             this.chbHasAirport.Name = "chbHasAirport";
-            this.chbHasAirport.Size = new System.Drawing.Size(105, 17);
+            this.chbHasAirport.Size = new System.Drawing.Size(79, 17);
             this.chbHasAirport.TabIndex = 1;
-            this.chbHasAirport.Text = "Town has airport";
+            this.chbHasAirport.Text = "Plane is full";
             this.chbHasAirport.UseVisualStyleBackColor = true;
+            // 
+            // chbHasPort
+            // 
+            this.chbHasPort.AutoSize = true;
+            this.chbHasPort.Location = new System.Drawing.Point(24, 43);
+            this.chbHasPort.Name = "chbHasPort";
+            this.chbHasPort.Size = new System.Drawing.Size(167, 17);
+            this.chbHasPort.TabIndex = 0;
+            this.chbHasPort.Text = "Plane has special bag section";
+            this.chbHasPort.UseVisualStyleBackColor = true;
             // 
             // fTown
             // 
@@ -261,11 +255,11 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox tbSquare;
-        private System.Windows.Forms.TextBox tbYearIncome;
-        private System.Windows.Forms.TextBox tbPopulation;
-        private System.Windows.Forms.TextBox tbRegion;
-        private System.Windows.Forms.TextBox tbCountry;
+        private System.Windows.Forms.TextBox tbCountFuel;
+        private System.Windows.Forms.TextBox tbCountPassengers;
+        private System.Windows.Forms.TextBox tbWeight;
+        private System.Windows.Forms.TextBox tbEngine;
+        private System.Windows.Forms.TextBox tbColor;
         private System.Windows.Forms.TextBox tbName;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.CheckBox chbHasAirport;

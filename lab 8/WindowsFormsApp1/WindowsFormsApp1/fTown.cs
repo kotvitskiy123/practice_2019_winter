@@ -12,10 +12,12 @@ namespace WindowsFormsApp1
 {
     public partial class fTown : Form
     {
-        public Town TheTown;
-        public fTown(Town t)
+        public Plane ThePlane;
+      
+
+        public fTown(Plane t)
         {
-            TheTown = t;
+            ThePlane = t;
             InitializeComponent();
         }
 
@@ -23,16 +25,16 @@ namespace WindowsFormsApp1
 
         private void btnOk_Click(object sender, EventArgs e)
         {
-                TheTown.Name = tbName.Text.Trim();
+            ThePlane.Name = tbName.Text.Trim();
 
-                TheTown.Country = tbCountry.Text.Trim();
-                TheTown.Region = tbRegion.Text.Trim();
-                TheTown.Population = int.Parse(tbPopulation.Text.Trim());
-                TheTown.YearIncome = double.Parse(tbYearIncome.Text.Trim());
-                TheTown.Square = double.Parse(tbSquare.Text.Trim());
-                TheTown.HasPort = chbHasPort.Checked;
-                TheTown.HasAirport = chbHasAirport.Checked;
-                DialogResult = DialogResult.OK;
+            ThePlane.Color = tbColor.Text.Trim();
+            ThePlane.Engine = tbEngine.Text.Trim();
+            ThePlane.Weight = int.Parse(tbWeight.Text.Trim());
+            ThePlane.CountPassengers = int.Parse(tbCountPassengers.Text.Trim());
+            ThePlane.CountFuel = int.Parse(tbCountFuel.Text.Trim());
+            ThePlane.HasSpecialBagsSection = chbHasPort.Checked;
+            ThePlane.IsFull = chbHasAirport.Checked;
+            DialogResult = DialogResult.OK;
             
         }
 
@@ -43,16 +45,19 @@ namespace WindowsFormsApp1
 
         private void fTown_Load(object sender, EventArgs e)
         {
-            if (TheTown != null)
+            if (ThePlane != null)
             {
-                tbName.Text = TheTown.Name;
-                tbCountry.Text = TheTown.Country;
-                tbRegion.Text = TheTown.Region;
-                tbPopulation.Text = TheTown.Population.ToString();
-                tbYearIncome.Text = TheTown.YearIncome.ToString("0.00");
-                tbSquare.Text = TheTown.Square.ToString("0.000");
-                chbHasPort.Checked = TheTown.HasPort; chbHasAirport.Checked = TheTown.HasAirport;
+                tbName.Text = ThePlane.Name;
+                tbColor.Text = ThePlane.Color;
+                tbEngine.Text = ThePlane.Engine;
+                tbWeight.Text = ThePlane.Weight.ToString();
+                tbCountPassengers.Text = ThePlane.CountPassengers.ToString();
+                tbCountFuel.Text = ThePlane.CountFuel.ToString();
+                chbHasPort.Checked = ThePlane.HasSpecialBagsSection;
+                chbHasAirport.Checked = ThePlane.IsFull;
             }
         }
+
+       
     }
 }

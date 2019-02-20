@@ -12,22 +12,22 @@ namespace WindowsFormsApp1
 {
     public partial class fMain : Form
     {
-        private object порт;
+       
 
         public fMain()
         {
             InitializeComponent();
         }
 
-        public object Немає { get; private set; }
+     
 
-        private void btnAddTown_Click(object sender, EventArgs e)
+        private void btnAddPlane_Click(object sender, EventArgs e)
         {
-            Town town = new Town();
-            fTown ft = new fTown(town);
+            Plane plane = new Plane();
+            fTown ft = new fTown(plane);
             if (ft.ShowDialog() == DialogResult.OK)
             {
-                tbTownsInfo.Text += string.Format("{0}, {1}, {2}. Мешканців: {3}. Річний дохід: { 4:0.00} грн.Площа: { 5:0.000} кв.км. [{ 6} | { 7}] | Річний дохід на мешканця: { 8:0.00} грн\r\n", town.Name, town.Country, town.Region, town.Population, town.YearIncome, town.Square, town.HasPort ? "Є порт" : "Немає порта", town.HasAirport ? "Є аеропорт" : "Немає аеропорта", town.GetYearIncomePerInhabitant());
+                tbTownsInfo.Text += string.Format("Name: {0}, Color:  {1}, Engine: {2}, Weight: {3}, CountPassengers: {4},  CountFuel: {5},   [{6} | {7}] \n", plane.Name, plane.Color, plane.Engine, plane.Weight, plane.CountPassengers, plane.CountFuel, plane.HasSpecialBagsSection ? "Has special bag section" : "No special bag section", plane.IsFull ? "Is full " : "Not full");
             }
         }
 
@@ -36,9 +36,6 @@ namespace WindowsFormsApp1
             if (MessageBox.Show("Припинити роботу застосунку?", "Припинити роботу", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)  Application.Exit();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+       
     }
 }
